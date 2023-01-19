@@ -26,6 +26,3 @@ include_directories(
 link_directories(
   ${catkin_LIBRARY_DIRS}
 )
-catkin_install_python(PROGRAMS scripts/ciccio.py
-  DESTINATION /home/lfortini/mediapipe_env/lib/python3.8/site-packages
-)
