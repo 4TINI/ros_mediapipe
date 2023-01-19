@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="camera_number" default="0" />
+    <arg name="color_topic" default="/camera$(arg camera_number)/rgb/image_raw" />
+    <arg name="pub_topic" default="/camera$(arg camera_number)/skeleton" />
+
+    <node name="ros_mediapipe" pkg="ros_mediapipe" type="ros_mediapipe.py" />
+
+</launch>
